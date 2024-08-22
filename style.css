@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+}
+
+.container {
+    width: 400px;
+    max-width: 100vw;
+    margin: 30px auto;
+    text-align: center;
+    background: #fff5;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+.form-container {
+    background: #fff;
+    padding: 10px;
+    border-radius: inherit;
+    margin-top: 10px;
+}
+
+.form-container h3 {
+    text-align: left;
+}
+
+.form-container form {
+    display: grid;
+    grid-template-columns: 1fr 60px;
+    gap: 10px;
+}
+
+.form-container input {
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 10px;
+    width: 100%;
+}
+
+.form-container button {
+    background: #0D0112;
+    color: #eee;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background: #f4d408;
+    color: #0D0112;
+}
+
+.list {
+    list-style: none;
+    max-height: 420px;
+    overflow-y: auto;
+}
+
+.list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.list::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+.list::-webkit-scrollbar-thumb {
+    background: #0fa5e0;
+    border-radius: 10px;
+    border: 1px solid #f1f1f1;
+}
+
+.list::-webkit-scrollbar-thumb:hover {
+    background: #336086;
+}
+
+.list li {
+    background: #fff;
+    margin-top: 10px;
+    border-radius: 20px;
+    font-size: 1em;
+    display: grid;
+    grid-template-columns: 40px 1fr 40px;
+    gap: 30px;
+    padding: 10px;
+    text-align: left;
+}
+
+.list li .complete-icon, .list li .delete-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.list li .complete-icon {
+    width: 20px;
+}
+
+.list li .delete-icon {
+    width: 10px;
+}
+
+.list li .complete-icon:hover {
+    color: rgb(148, 242, 7);
+}
+
+.list li .delete-icon:hover {
+    color: red;
+}
+
+.list li.complete .content {
+    opacity: 0.8;
+    color: green;
+}
+
+.list li.complete .complete-icon {
+    color: rgb(108, 174, 9);
+}
+
+.list li.complete .delete-icon {
+    color: red;
+}
